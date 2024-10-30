@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veeva QMS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="Veeva QMS.png">
+        <!-- Search Section -->
+        <div id="search-section">
+
+            <input type="text" id="search-input" placeholder="Please enter your search items ..." class="search-bar" required>
+            <button class="search-button" onclick="performSearch()">Search</button>
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+        </div>
+
+        <!-- Login Section -->
+        <!-- <div id="login-section" class="hidden">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Enter Username" class="login-input" required><br>
+            <input type="password" id="password" placeholder="Enter Password" class="login-input" required><br>
+            <button class="login-button" onclick="performLogin()">Fetch Metadata</button>
+            <div id="login-error-message" style="color: red; margin-top: 10px;"></div>
+        </div> -->
+
+        <!-- Metadata Table Section -->
+        <div id="table-section" class="hidden">
+            <table id="metadata-table">
+                <tr>
+                    <th>Object Label</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Description</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

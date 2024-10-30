@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f49b35;
+    padding-top: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+.search-bar,
+.login-input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid #dcdcdc;
+    font-size: 18px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.search-button,
+.login-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #4285f4;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button:hover,
+.login-button:hover {
+    background-color: #357ae8;
+}
+
+h1 {
+    font-size: 80px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 2, 28, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    color: transparent;
+    background-size: 500% 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: maha 2s ease infinite;
+    margin: 0;
+}
+
+@keyframes maha {
+    0% {
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
